@@ -1,0 +1,13 @@
+{
+  "name": "Spotify",
+  "version": "0.0.0",
+  "sentences": [
+    "ouvres spotify",
+    "mets de la musique",
+    "montes le son",
+    "baisses le son"
+  ],
+  "folder": "spotify",
+  "script": "spotify.js",
+  "url": "/spotify"
+}

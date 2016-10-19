@@ -1,0 +1,13 @@
+{
+  "name": "Alarm clock",
+  "version": "0.0.0",
+  "sentences": [
+    "met le réveil à",
+    "met le réveil a",
+    "réveille moi à",
+    "réveille moi a"
+  ],
+  "folder": "alarm-clock",
+  "script": "alarm-clock.js",
+  "url": "/alarm"
+}

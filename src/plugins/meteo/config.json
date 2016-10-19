@@ -1,0 +1,17 @@
+{
+  "name": "Météo",
+  "version": "0.0.0",
+  "sentences": [
+    "quelle est la météo à",
+    "il fait comment aujourd'hui à",
+    "quel temps fait t-il aujourd'hui à",
+    "dis moi la météo à",
+    "fait il du vent à",
+    "quel temps pour demain à",
+    "quel temps fera-t-il demain à",
+    "dis-moi la météo de demain à"
+  ],
+  "script": "meteo.js",
+  "folder": "meteo",
+  "url": "/meteo"
+}

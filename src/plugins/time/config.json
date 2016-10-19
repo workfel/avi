@@ -1,0 +1,11 @@
+{
+  "name": "Time",
+  "version": "0.0.0",
+  "sentences": [
+    "quelle heure est-il",
+    "il est quelle heure"
+  ],
+  "folder": "time",
+  "script": "time.js",
+  "url": "/time"
+}

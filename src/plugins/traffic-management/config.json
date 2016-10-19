@@ -1,0 +1,14 @@
+{
+  "name": "Traffic",
+  "version": "0.0.0",
+  "sentences": [
+    "Combien de temps il me faut pour aller au travail ",
+    "Quel est l'état du traffic pour aller au travail",
+    "Aller au travail",
+    "Combien de temps il me faut pour aller à",
+    "Je veux aller à"
+  ],
+  "folder": "traffic-management",
+  "script": "traffic.js",
+  "url": "/traffics"
+}
