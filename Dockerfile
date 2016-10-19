@@ -1,6 +1,7 @@
 FROM node:6-slim
 MAINTAINER avi
 
+
 RUN npm install gulp typings@1.3.3 yarn -g
 EXPOSE 8080
 

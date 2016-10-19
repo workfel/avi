@@ -2,7 +2,6 @@ import {Speak} from "./speak/Speak";
 import {ISpeechToTextListener} from "./speech-to-text/ISpeechToTextListener";
 import {SpeechToTextService} from "./speech-to-text/SpeechToTextService";
 import {Config} from "./config/Config";
-import {PluginManager} from "./plugin/PluginManager";
 import {SentenceComputer} from "./sentence/SentenceComputer";
 import {Sound} from "./sound/Sound";
 import {SentenceHistory} from "./sentence/SentenceHistory";

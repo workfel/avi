@@ -1,8 +1,8 @@
 /**
  * Created by johan on 11/11/2015.
  */
-import shelljs = require('shelljs');
-import googleTTS = require('google-tts-api');
+const shelljs = require('shelljs');
+const googleTTS = require('google-tts-api');
 
 export class Speak {
     private static exec = shelljs.exec;

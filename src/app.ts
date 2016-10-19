@@ -3,25 +3,24 @@
  */
 import express = require("express");
 import path = require("path");
-import bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 import index = require("./routes/index")
-import plugins = require("./routes/plugin")
+const plugins = require("./routes/plugin");
 import {Avi} from "./avi/Avi";
-import {History} from "./src/routes/history";
 
 var app = express();
 
 
 class HttpServer {
-    NodePort:number;
+    NodePort: number;
 
 
-    constructor(port:number) {
+    constructor(port: number) {
         this.NodePort = port;
         this.configure();
     }
 
-    private configure():void {
+    private configure(): void {
         app.use(express.static(path.join(__dirname, 'public')));
         //app.set('views', __dirname + '/views');
         //app.set('view engine', 'jade');
@@ -37,16 +36,21 @@ class HttpServer {
     }
 
     onStart() {
-        app.listen(this.NodePort, this.NodePort);
+        app.listen(this.NodePort, (err) => {
+            if (err) {
+                Avi.logger.error(err);
+            } else {
+                Avi.logger.info("Listening on port " + this.NodePort);
+            }
+        });
     }
 }
 
-var server = new HttpServer(3000);
+var server = new HttpServer(8080);
 server.onStart();
 
-Avi.logger.info("HTTP server running at http://localhost:3000/");
 
-let avi:Avi = new Avi();
+let avi: Avi = new Avi();
 
 
 avi.init();
